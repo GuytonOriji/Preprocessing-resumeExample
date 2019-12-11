@@ -1,0 +1,253 @@
+// Is this working?
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+
+}
+
+html, body {
+    height: 100%;
+    font-weight:bolder;
+}
+
+
+
+
+
+//variables 
+@bg:#efefef;
+@gr:darkslategray;
+//variables 
+
+.sheet{//sheet styles
+font-family:'Gelasio', serif;
+position:absolute;
+width:100%;
+height:100%;
+display:flex;
+flex-direction:column;
+grid-gap:5%;
+padding:0% 5%;
+//sheet styles
+
+header{//header style
+	flex:1;
+	display:block;
+	text-align:right;
+
+
+
+			nav{//navigation style
+			float:right;
+				width:50%;
+				display:flex;
+				justify-content:space-between;
+				align-items:center;
+						@media screen and (max-width:500px){
+							width:100%;
+						}
+					a{
+						color:#000;
+					}
+			}//navigation style
+
+	}//header style
+
+
+
+.main{//main styles
+	flex:2;
+	display:flex;
+	flex-direction:column;
+	grid-gap:2.5%;
+				@media screen and (max-width:500px){
+						grid-gap:5%;
+					}
+
+			.who{
+			height:auto;
+				display:table-cell;
+				flex-direction:column;
+				
+				background-color:@bg;
+
+					figure{
+						
+				align-items:left;
+				padding:5%;
+					
+					hr{
+					color:@gr;
+					}
+
+					figcaption{
+					flex:1;
+					text-align:left
+					}
+
+					span{
+						display:flex;
+
+					}
+
+					button{
+						float:left;
+						border:none;
+						padding:5px 10px;
+						background-color:@gr;
+						color:#fff;
+						border-radius:3px;
+					}
+				}
+			}
+
+
+.secNthings{//small bio and things im good at sec
+	display:flex;
+	flex-direction:row;
+	grid-gap:3%;
+					@media screen and (max-width:500px){
+						flex-direction:column;
+						grid-gap:5%;
+					}
+
+			article:nth-child(1){
+				flex:1;
+				display:flex;
+				flex-direction:column;
+				grid-gap:5%;
+
+			}
+
+			article:nth-child(2){
+					flex:1;
+				display:flex;
+				flex-direction:column;
+				grid-gap:5%;
+						ul{
+						display:flex;
+				flex-direction:column;
+
+								li{
+									flex:1;
+									border:solid .3px;
+									display:flex;
+									justify-content:flex-start;
+									align-items:flex-start;
+									padding:3%;
+								}
+						}
+			}
+
+}//small bio and things im good at sec
+
+
+.table_{//table at the bottom
+		flex:1;
+		display:flex;
+  width:100%;
+  table{
+     width:100%;
+      flex:1;
+		display:flex;
+    flex-direction:column;
+    caption{
+       flex:1;
+		display:flex;
+      text-align:left;
+      
+      
+    }
+    thead,tr,td,th{
+       flex:1;
+		display:flex;
+      padding:.4% 0%;
+    }
+
+    tr:nth-child(odd){
+    		border-top:solid @gr 1px;
+    }
+
+    tbody tr:nth-child(odd){
+    		background-color:@bg;
+    }
+  }
+	
+
+}//table at the bottom
+	
+  footer{
+    flex:1;
+    display:flex;
+    background-color:@gr;
+    span{
+      width:100%;
+    height:100%;
+      text-align:center;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+      margin:.3% 0% 2% 0%;
+      color:#fff;
+    }
+  }
+	}//main styles
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-weight: bolder;
+}
+.sheet {
+  font-family: 'Gelasio', serif;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5%;
+  padding: 0% 5%;
+}
+.sheet header {
+  flex: 1;
+  display: block;
+  text-align: right;
+}
+.sheet header nav {
+  float: right;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .sheet header nav {
+    width: 100%;
+  }
+}
+.sheet header nav a {
+  color: #000;
+}
+.sheet .main {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2.5%;
+}
+@media screen and (max-width: 500px) {
+  .sheet .main {
+    grid-gap: 5%;
+  }
+}
+.sheet .main .who {
+  height: auto;
+  display: table-cell;
+  flex-direction: column;
+  background-color: #efefef;
+}
+.sheet .main .who figure {
+  align-items: left;
+  padding: 5%;
+}
+.sheet .main .who figure hr {
+  color: darkslategray;
+}
+.sheet .main .who figure figcaption {
+  flex: 1;
+  text-align: left;
+}
+.sheet .main .who figure span {
+  display: flex;
+}
+.sheet .main .who figure button {
+  float: left;
+  border: none;
+  padding: 5px 10px;
+  background-color: darkslategray;
+  color: #fff;
+  border-radius: 3px;
+}
+.sheet .main .secNthings {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 3%;
+}
+@media screen and (max-width: 500px) {
+  .sheet .main .secNthings {
+    flex-direction: column;
+    grid-gap: 5%;
+  }
+}
+.sheet .main .secNthings article:nth-child(1) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5%;
+}
+.sheet .main .secNthings article:nth-child(2) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5%;
+}
+.sheet .main .secNthings article:nth-child(2) ul {
+  display: flex;
+  flex-direction: column;
+}
+.sheet .main .secNthings article:nth-child(2) ul li {
+  flex: 1;
+  border: solid 0.3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3%;
+}
+.sheet .main .table_ {
+  flex: 1;
+  display: flex;
+  width: 100%;
+}
+.sheet .main .table_ table {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.sheet .main .table_ table caption {
+  flex: 1;
+  display: flex;
+  text-align: left;
+}
+.sheet .main .table_ table thead,
+.sheet .main .table_ table tr,
+.sheet .main .table_ table td,
+.sheet .main .table_ table th {
+  flex: 1;
+  display: flex;
+  padding: 0.4% 0%;
+}
+.sheet .main .table_ table tr:nth-child(odd) {
+  border-top: solid darkslategray 1px;
+}
+.sheet .main .table_ table tbody tr:nth-child(odd) {
+  background-color: #efefef;
+}
+.sheet .main footer {
+  flex: 1;
+  display: flex;
+  background-color: darkslategray;
+}
+.sheet .main footer span {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0.3% 0% 2% 0%;
+  color: #fff;
+}
+
